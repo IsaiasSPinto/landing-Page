@@ -75,6 +75,7 @@ body {
     height: 43vh;
     align-items: center;
     justify-content: space-between;
+    gap: 25vh;
     
 }
 
@@ -99,7 +100,6 @@ body {
 }
 
 .inputs {
-    display: block;
     width: 302px;
     height: 25px;
     margin-bottom: 15px;
@@ -197,4 +197,44 @@ body {
 
 
 
+@media(max-width: 1440px) {
+    .Text-subs {
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 1024px) {
+    
+    .center {
+        gap: 5vh;
+    }
+
+    .Text-subs {
+        font-size: 25px;
+        margin-left: 20vw;
+    }
+    .container{
+        width: 60%;
+        
+    }
+
+    .container .product-img img {
+        width: 60%;
+        
+        top: 25px;
+        left: 50px;
+    }
+
+    .card-content {
+        width: 75%;
+    }
+
+    .inputs {
+        width: 250px;
+    }
+
+    buttons {
+        width: 250px;
+    }
+}
 
