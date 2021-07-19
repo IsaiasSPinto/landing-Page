@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tech Store</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
@@ -23,19 +26,126 @@
                 <li class="navigation-tabs">Products</li>
                 <li class="navigation-tabs">Sales</li>
                 <li class="navigation-tabs">Subscribe</li>
+                <li class="navigation-tabs">Cart</li>
             </ul>
         </div>
-        <div class="nav-buttons">
+        <nav class="nav-buttons">
             <a class="buttons" href="">Login</a>
             <a class="buttons" href="">Contact</a>
-        </div>
+        </nav>
     </header>
 
-    <section>
+    <section class="center">
+        <div class="Text-subs">
+            <h1>Subscribe for more offers</h1>
+            <p id="p-subs">Every week new tech offers </p>
+        </div>
+
+
+
+        <form class="Form">
+            <label for="Name" style="margin-bottom: 5px;">Full name</label>
+            <input class="inputs" id="Name" type="text" required>
+
+            <label for="Email" style="margin-bottom: 5px;">E-mail</label>
+            <input class="inputs" id="Email" type="email" required>
+
+            <label for="Tel" style="margin-bottom: 5px;">Tel</label>
+            <input class="inputs" id="Tel" type="tel">
+
+            <input class="submit-button" type="submit" value="Submit">
+
+        </form>
+
+
 
     </section>
 
-    <footer></footer>
+    <section class='products-section'>
+        <div class="container">
+            <div class="product-img">
+                <img src="./assets/imgs/celular.png" alt="Smarthphone image">
+            </div>
+            <div class=" card-content">
+                <div class="wrapper">
+                    <h2 class="product-title">SMARTHPHONE</h2>
+                    <span class="product-desc">
+                        Samsung galaxy s10
+                    </span>
+                    <span class="price" style="font-weight: bold;">$ 2000,00</span>
+
+                    <div class="buttons-card">
+                        <img style="width: 20%;" class="button-card" src="./assets/imgs/cart.svg" alt="">
+                        <img style="width: 20%;" class="button-card" src="./assets/imgs/bag.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="product-img">
+                <img src="./assets/imgs/teclado.png" alt="Teclado Image">
+            </div>
+            <div class=" card-content">
+                <div class="wrapper">
+                    <h2 class="product-title">KEYBOARD</h2>
+                    <span class="product-desc">
+                        Mechanical keyboard RGB Aorus
+                    </span>
+                    <span class="price" style="font-weight: bold;">$ 300,00</span>
+
+                    <div class="buttons-card">
+                        <img style="width: 20%;" class="button-card" src="./assets/imgs/cart.svg" alt="">
+                        <img style="width: 20%;" class="button-card" src="./assets/imgs/bag.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="product-img">
+                <img src="./assets/imgs/mouse.png" alt="Mouse image">
+            </div>
+            <div class=" card-content">
+                <div class="wrapper">
+                    <h2 class="product-title">MOUSE</h2>
+                    <span class="product-desc">
+                        Mouse 16000 dpi Aorus RGB
+                    </span>
+                    <span class="price" style="font-weight: bold;">$ 120,00</span>
+
+                    <div class="buttons-card">
+                        <img style="width: 20%;" class="button-card" src="./assets/imgs/cart.svg" alt="">
+                        <img style="width: 20%;" class="button-card" src="./assets/imgs/bag.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="product-img">
+                <img src="./assets/imgs/headset.png" alt="Headset image">
+            </div>
+            <div class=" card-content">
+                <div class="wrapper">
+                    <h2 class="product-title">HEADSET</h2>
+                    <span class="product-desc">
+                        Headset Hyperx Cloud ||
+                    </span>
+                    <span class="price" style="font-weight: bold;">$ 500,00</span>
+
+                    <div class="buttons-card">
+                        <img style="width: 20%;" class="button-card" src="./assets/imgs/cart.svg" alt="">
+                        <img style="width: 20%;" class="button-card" src="./assets/imgs/bag.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer class="footer">
+        <span>Desenvolvido por Isaias Pinto</span>
+        <img id="git-icon" style="height: 100%;" src="./assets/imgs/github.png" alt="icon git hub">
+    </footer>
 
     <script src="./script/script.js"></script>
 </body>
